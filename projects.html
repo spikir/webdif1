@@ -1,0 +1,139 @@
+<html>
+	<head>
+		<link href="css/style.css" rel="stylesheet" type="text/css" media="screen" />
+	</head>
+	<body>
+		<div class="header">
+			<div class="title">
+				<h2>WebDif</h2> 
+			</div>
+			<div class="navi">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="projects.html">Projects</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="picture" style="background-image: url('img/paint-notebook-brush-pencil-159657.jpeg')">
+			<h2>Discovering new techniques & designs!</h2>
+			<p>
+				Different projects developed in popular programming languages for you.
+			</p>
+		</div>
+		<div class="wrp">
+			<div class="content">
+				<div class="contenttitle">
+					<h2>Projects</h2>
+				</div>
+				<div class="article">
+					<p>
+						<h3>MVC Login demo</h3>
+					</p>
+					<img id="myImg" src="img/mvc_login.png" alt="MVC login" height="100" width="200"/>
+					
+					<div id="myModal" class="modal">
+						<span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+						
+						<img class="modal-content" id="img01" src="img/mvc_login.png">
+						
+						<div id="caption"></div>
+						
+					</div>
+					
+					This is simple login system based on MVC pattern with MySQL database. It contains only important functions as
+					<ul>
+						<li>Register</li>
+						<li>Login</li>
+					</ul>
+					You can download the login system on github under https://github.com/spikir/login_mvc
+				</div>
+				<div class="article">
+					<p>
+						<h3>MVC Cart demo</h3>
+					</p>
+					<img id="myImg2" src="img/mvc_cart.png" alt="MVC cart" height="100" width="200"/>
+					This is simple open source cart system based on MVC pattern with MySQL database. It contains different functions for users, but no functions for administrator. Most important functions are
+					<ul>
+						<li>Register</li>
+						<li>Login</li>
+						<li>Verify email for new users</li>
+						<li>Display items</li>
+						<li>Add items to cart</li>
+						<li>Remove items from cart</li>
+						<li>Change quantity of an item</li>
+						<li>Place order</li>
+						<li>Search an item</li>
+						<li>Sort items</li>
+						<li>Paging</li>
+					</ul>
+					You can download the cart system on github under https://github.com/spikir/cart_mvc
+				</div>
+				<div class="article">
+					<p>
+						<h3>Fluid one column html template</h3>
+					</p>
+					<img id="myImg3" src="img/html_template_fluid_one_column.png" alt="Fluid template one column" height="100" width="200"/>
+					This is fluid one column template in HTML<br><br>
+					You can download the template on github under https://github.com/spikir/html_templates/fluid_one_column
+				</div>
+				<div class="article">
+					<p>
+						<h3>Fluid two columns html template</h3>
+					</p>
+					<img id="myImg4" src="img/html_template_fluid_two_column.png" alt="Fluid template one column" height="100" width="200"/>
+					This is fluid two columns template in HTML<br><br>
+					You can download the template on github under https://github.com/spikir/html_templates/fluid_two_columns
+				</div>
+				<script type="text/javascript">
+					var modal = document.getElementById('myModal');
+					
+					var img = document.getElementById('myImg');
+					var img2 = document.getElementById('myImg2');
+					var img3 = document.getElementById('myImg3');
+					var img4 = document.getElementById('myImg4');
+					var modalImg = document.getElementById('img01');
+					var captionText = document.getElementById('caption');
+					
+					img.onclick = function() {
+						modal.style.display = 'block';
+						modalImg.src = this.src;
+						captionText.innerHtml = this.alt;
+					}
+					
+					img2.onclick = function() {
+						modal.style.display = 'block';
+						modalImg.src = this.src;
+						captionText.innerHtml = this.alt;
+					}
+					
+					img3.onclick = function() {
+						modal.style.display = 'block';
+						modalImg.src = this.src;
+						captionText.innerHtml = this.alt;
+					}
+					
+					img4.onclick = function() {
+						modal.style.display = 'block';
+						modalImg.src = this.src;
+						captionText.innerHtml = this.alt;
+					}
+					
+					var span = document.getElementsByClassName("close")[0];
+					
+					span.onclick = function() {
+						modal.style.display = "none";
+					}
+				</script>
+			</div>
+		</div>
+		<div class="footer">
+			<p>
+				Copyright by WebDif
+			</p>
+			<p>
+				2017
+			</p>
+		</div>
+	</body>
+</html>
